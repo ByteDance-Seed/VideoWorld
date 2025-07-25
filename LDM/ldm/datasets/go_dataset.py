@@ -93,7 +93,7 @@ class GoImageMF(Dataset):
         self.data_root = data_root
         infos = []
         file_list = os.listdir(data_root)
-        with open(f'./data/go_dataset_size9/la_train_info_ai_6k_type3.json', 'r') as f:
+        with open(f'./data/go_dataset_size9/go_eval_info.json', 'r') as f:
             battles = json.load(f)
         battles = battles['battles']
         idx_to_battle = {}
@@ -130,11 +130,7 @@ class GoImageMF(Dataset):
                 idx1 = int(_name1[:-4].replace('i_', ''))
                 item['action'] = []
                 item['capture'] = []
-                try:
-                    item['type'] = types[idx1]
-                except:
-                    num += 1
-                    break
+                
                 for mi in range(idx0+1, idx1+1):
                     item['action'].append(moves[mi])
                     item['capture'].append(captured[mi])
@@ -203,7 +199,7 @@ if __name__ == '__main__':
     dict(type='PackVideoInputs', meta_keys=['clip_start_end_id', 'idx'])
 ]
 
-    dataset = GoImageMF(data_root="/opt/tiger/PointVIS/la_train_ai/opt/tiger/kataselfpaly_filterdup_ignore_wcap_10M_image/", interval=1, sample_num=50000,pipeline=test_pipeline)
+    dataset = GoImageMF(data_root="./data/go_dataset_size9/go_eval", interval=1, sample_num=50000,pipeline=test_pipeline)
     # dataset = CALVINVideoValDataset(data_root="/mnt/bn/panxuran/calvin/task_ABCD_D/training", clip_length=5, interval=5, pipeline=train_pipeline)
 
     for data in dataset:
