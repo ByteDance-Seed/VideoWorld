@@ -9,7 +9,7 @@
 <img width="1000" alt="image" src='assets/readme_figs/Fig1_final.png'>
 
 ## :fire: News
-* **[2025.12]** We release the code and dataset.
+* **[2026.02]** We release the code and dataset.
 
 # Highlight
 
