@@ -23,7 +23,7 @@
 Learning transferable knowledge from unlabeled video data and applying it in new environments is a fundamental capability of intelligent agents. This work presents VideoWorld 2, which extends VideoWorld and offers the first investigation into learning transferable knowledge directly from raw real-world videos. At its core, VideoWorld 2 introduces a dynamic-enhanced Latent Dynamics Model (dLDM) that decouples action dynamics from visual appearance: a pretrained video diffusion model handles visual appearance modeling, enabling the dLDM to learn latent codes that focus on compact and meaningful task-related dynamics. These latent codes are then modeled autoregressively to learn task policies and support long-horizon reasoning. We evaluate VideoWorld 2 on challenging real-world handcraft making tasks, where prior video generation and latent-dynamics models struggle to operate reliably. Remarkably, VideoWorld 2 achieves up to \textbf{70\% improvement in task success rate} and produces coherent long execution videos. In robotics, we show that VideoWorld 2 can acquire effective manipulation knowledge from the Open-X dataset, which substantially improves task performance on CALVIN. This study reveals the potential of learning transferable world knowledge directly from raw videos, with all code, data, and models open-sourced for further research.
 
 # Video
-[![IMAGE ALT TEXT](assets/readme_figs/Thumbnail.png)](xxxx "VideoWorld 2 Demo")
+[![IMAGE ALT TEXT](assets/readme_figs/Thumbnail.png)](https://youtu.be/2qz7_iLV7qk "VideoWorld 2 Demo")
 
 # Architecture
 
