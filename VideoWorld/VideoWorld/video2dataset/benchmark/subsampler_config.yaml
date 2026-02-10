@@ -1,0 +1,25 @@
+video_set:
+  - path: "dataset/mp4/{00000..00009}.tar"
+subsamplers:
+  - name: ResolutionSubsampler
+    parameters:
+      - video_size: [360, 60, 1080]
+        resize_mode: ["scale", "scale,crop,pad"]
+  - name: FrameSubsampler
+    parameters:
+      - frame_rate: [1, 10]
+  - name: CutDetectionSubsampler
+    parameters:
+      - cut_detection_mode: ["all"]
+        threshold: [27, 12, 8]
+        min_scene_len: [2, 15]
+  - name: ClippingSubsampler
+    parameters:
+      - oom_clip_count: [5]
+        encode_formats: [{"video": "mp4"}]
+        precise: [True, False]
+        min_length: [0, 4, 10]
+        max_length: [20, 9999]
+  - name: MetadataSubsampler
+    parameters:
+      - extract_keyframes: [False, True]

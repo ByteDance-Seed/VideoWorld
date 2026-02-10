@@ -1,1 +1,0 @@
-* [ ] I have read CONTRIBUTE.md

@@ -1,0 +1,31 @@
+subsampling: {}
+
+reading:
+    yt_args:
+        download_size: 360
+        download_audio_rate: 44100
+        yt_metadata_args:
+            writesubtitles: 'all'
+            subtitleslangs: ['en']
+            writeautomaticsub: True
+            get_info: True
+    timeout: 60
+    sampler: null
+
+storage:
+    number_sample_per_shard: 1000
+    oom_shard_count: 5
+    captions_are_subtitles: False
+
+distribution:
+    processes_count: 1
+    thread_count: 8
+    subjob_size: 1000
+    distributor: "slurm"
+    distributor_args:
+        cpus_per_task: 16
+        job_name: "v2ds"
+        partition: "<NODE_NAME>"
+        n_nodes: 2
+        account: "<YOUR_ACCOUNT>"
+        cache_path: "<YOUR_HOME>/.slurm_cache"

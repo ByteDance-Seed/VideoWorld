@@ -1,0 +1,424 @@
+{
+    "system_info": {
+        "platform": "Linux",
+        "cpu_count": 96,
+        "cpu_info": "x86_64",
+        "gpu_info": "NVIDIA A100-SXM4-80GB",
+        "gpu_count": 8
+    },
+    "dataset_info": {
+        "samples": 100,
+        "frames": 57106,
+        "bytes": 236045214.0
+    },
+    "subsamplers": {
+        "ResolutionSubsampler": [
+            {
+                "config": {
+                    "video_size": 360,
+                    "resize_mode": "scale"
+                },
+                "metrics": {
+                    "time": 111.13579082489014,
+                    "samples/s": 0.8998001387110646,
+                    "frames/s": 513.8398672123406,
+                    "bytes/s": 2123935.162992829
+                }
+            },
+            {
+                "config": {
+                    "video_size": 360,
+                    "resize_mode": "scale,crop,pad"
+                },
+                "metrics": {
+                    "time": 70.28809905052185,
+                    "samples/s": 1.4227159554866002,
+                    "frames/s": 812.4561735401779,
+                    "bytes/s": 3358252.9217404905
+                }
+            },
+            {
+                "config": {
+                    "video_size": 60,
+                    "resize_mode": "scale"
+                },
+                "metrics": {
+                    "time": 22.140214204788208,
+                    "samples/s": 4.516668134962003,
+                    "frames/s": 2579.2885051514013,
+                    "bytes/s": 10661378.964840868
+                }
+            },
+            {
+                "config": {
+                    "video_size": 60,
+                    "resize_mode": "scale,crop,pad"
+                },
+                "metrics": {
+                    "time": 18.740954160690308,
+                    "samples/s": 5.335907614018548,
+                    "frames/s": 3047.123402061432,
+                    "bytes/s": 12595154.546352375
+                }
+            },
+            {
+                "config": {
+                    "video_size": 1080,
+                    "resize_mode": "scale"
+                },
+                "metrics": {
+                    "time": 226.4908411502838,
+                    "samples/s": 0.4415189571998933,
+                    "frames/s": 252.13381569857108,
+                    "bytes/s": 1042184.3673730566
+                }
+            },
+            {
+                "config": {
+                    "video_size": 1080,
+                    "resize_mode": "scale,crop,pad"
+                },
+                "metrics": {
+                    "time": 214.78087329864502,
+                    "samples/s": 0.46559080640739187,
+                    "frames/s": 265.8802859070052,
+                    "bytes/s": 1099004.8153486538
+                }
+            }
+        ],
+        "FrameSubsampler": [
+            {
+                "config": {
+                    "frame_rate": 1
+                },
+                "metrics": {
+                    "time": 30.05926489830017,
+                    "samples/s": 3.326761327608345,
+                    "frames/s": 1899.7803237440214,
+                    "bytes/s": 7852660.895022359
+                }
+            },
+            {
+                "config": {
+                    "frame_rate": 10
+                },
+                "metrics": {
+                    "time": 47.6098906993866,
+                    "samples/s": 2.1004038978247097,
+                    "frames/s": 1199.4566498917786,
+                    "bytes/s": 4957902.875484677
+                }
+            }
+        ],
+        "CutDetectionSubsampler": [
+            {
+                "config": {
+                    "cut_detection_mode": "all",
+                    "threshold": 12,
+                    "min_scene_len": 15
+                },
+                "metrics": {
+                    "time": 15.451006174087524,
+                    "samples/s": 6.47207041879948,
+                    "frames/s": 3695.9405333596314,
+                    "bytes/s": 15277012.47028593
+                }
+            },
+            {
+                "config": {
+                    "cut_detection_mode": "all",
+                    "threshold": 8,
+                    "min_scene_len": 2
+                },
+                "metrics": {
+                    "time": 15.451342105865479,
+                    "samples/s": 6.471929707778526,
+                    "frames/s": 3695.860178924005,
+                    "bytes/s": 15276680.328655396
+                }
+            },
+            {
+                "config": {
+                    "cut_detection_mode": "all",
+                    "threshold": 12,
+                    "min_scene_len": 2
+                },
+                "metrics": {
+                    "time": 15.480078220367432,
+                    "samples/s": 6.459915678489796,
+                    "frames/s": 3688.9994473583833,
+                    "bytes/s": 15248321.787510792
+                }
+            },
+            {
+                "config": {
+                    "cut_detection_mode": "all",
+                    "threshold": 8,
+                    "min_scene_len": 15
+                },
+                "metrics": {
+                    "time": 15.529819011688232,
+                    "samples/s": 6.439225075626242,
+                    "frames/s": 3677.1838716871216,
+                    "bytes/s": 15199482.609703623
+                }
+            },
+            {
+                "config": {
+                    "cut_detection_mode": "all",
+                    "threshold": 27,
+                    "min_scene_len": 15
+                },
+                "metrics": {
+                    "time": 15.553856611251831,
+                    "samples/s": 6.429273620001029,
+                    "frames/s": 3671.5009934377877,
+                    "bytes/s": 15175992.674976977
+                }
+            },
+            {
+                "config": {
+                    "cut_detection_mode": "all",
+                    "threshold": 27,
+                    "min_scene_len": 2
+                },
+                "metrics": {
+                    "time": 15.701493978500366,
+                    "samples/s": 6.368820708203137,
+                    "frames/s": 3636.9787536264835,
+                    "bytes/s": 15033296.46995441
+                }
+            }
+	],
+        "ClippingSubsampler": [
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": true,
+                    "min_length": 0,
+                    "max_length": 20
+                },
+                "metrics": {
+                    "time": 103.1305103302002,
+                    "samples/s": 0.9696451581575906,
+                    "frames/s": 553.7255640174737,
+                    "bytes/s": 2288800.9886137233
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": true,
+                    "min_length": 0,
+                    "max_length": 9999
+                },
+                "metrics": {
+                    "time": 102.62368559837341,
+                    "samples/s": 0.9744339176372847,
+                    "frames/s": 556.4602330059478,
+                    "bytes/s": 2300104.6261755126
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": true,
+                    "min_length": 4,
+                    "max_length": 20
+                },
+                "metrics": {
+                    "time": 57.5337016582489,
+                    "samples/s": 1.7381117000606285,
+                    "frames/s": 992.5660674366226,
+                    "bytes/s": 4102729.481967149
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": true,
+                    "min_length": 4,
+                    "max_length": 9999
+                },
+                "metrics": {
+                    "time": 57.83302330970764,
+                    "samples/s": 1.7291158974082954,
+                    "frames/s": 987.4289243739812,
+                    "bytes/s": 4081495.3203454316
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": true,
+                    "min_length": 10,
+                    "max_length": 20
+                },
+                "metrics": {
+                    "time": 9.375545024871826,
+                    "samples/s": 10.666046585528195,
+                    "frames/s": 6090.952563131731,
+                    "bytes/s": 25176692.48814972
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": true,
+                    "min_length": 10,
+                    "max_length": 9999
+                },
+                "metrics": {
+                    "time": 9.352877855300903,
+                    "samples/s": 10.691896285518505,
+                    "frames/s": 6105.714292808197,
+                    "bytes/s": 25237709.467810202
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": false,
+                    "min_length": 0,
+                    "max_length": 20
+                },
+                "metrics": {
+                    "time": 8.940687894821167,
+                    "samples/s": 11.184821702357413,
+                    "frames/s": 6387.204281348224,
+                    "bytes/s": 26401236.322848
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": false,
+                    "min_length": 0,
+                    "max_length": 9999
+                },
+                "metrics": {
+                    "time": 8.388755559921265,
+                    "samples/s": 11.92071926350642,
+                    "frames/s": 6807.445942617976,
+                    "bytes/s": 28138287.29588295
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": false,
+                    "min_length": 4,
+                    "max_length": 20
+                },
+                "metrics": {
+                    "time": 3.405555009841919,
+                    "samples/s": 29.363789370896658,
+                    "frames/s": 16768.485558144246,
+                    "bytes/s": 69311819.45904227
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": false,
+                    "min_length": 4,
+                    "max_length": 9999
+                },
+                "metrics": {
+                    "time": 3.384561061859131,
+                    "samples/s": 29.545928754811783,
+                    "frames/s": 16872.49807472282,
+                    "bytes/s": 69741750.757583
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": false,
+                    "min_length": 10,
+                    "max_length": 20
+                },
+                "metrics": {
+                    "time": 0.40822601318359375,
+                    "samples/s": 244.96234137589474,
+                    "frames/s": 139888.19466611845,
+                    "bytes/s": 578221882.9201413
+                }
+            },
+            {
+                "config": {
+                    "oom_clip_count": 5,
+                    "encode_formats": {
+                        "video": "mp4"
+                    },
+                    "precise": false,
+                    "min_length": 10,
+                    "max_length": 9999
+                },
+                "metrics": {
+                    "time": 0.4058263301849365,
+                    "samples/s": 246.41082296072224,
+                    "frames/s": 140715.36455995005,
+                    "bytes/s": 581640954.3767979
+                }
+            }
+        ],
+        "MetadataSubsampler": [
+            {
+                "config": {
+                    "extract_keyframes": false
+                },
+                "metrics": {
+                    "time": 7.498495101928711,
+                    "samples/s": 13.336009244612121,
+                    "frames/s": 7615.661439228198,
+                    "bytes/s": 31479011.560504466
+                }
+            },
+            {
+                "config": {
+                    "extract_keyframes": true
+                },
+                "metrics": {
+                    "time": 7.5574257373809814,
+                    "samples/s": 13.232018874545355,
+                    "frames/s": 7556.276698497871,
+                    "bytes/s": 31233547.268940978
+                }
+            }
+        ]
+    }
+}

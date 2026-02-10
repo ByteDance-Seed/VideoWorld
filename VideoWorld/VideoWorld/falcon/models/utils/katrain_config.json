@@ -1,0 +1,211 @@
+{
+    "engine": {
+        "katago": "",
+        "altcommand": "",
+        "model": "/mnt/bn/panxuran/Go_utils/kata1-b18c384nbt-s9791399168-d4261348054.bin.gz",
+        "config": "/opt/tiger/PointVIS/falcon/falcon/models/utils/gtp_example.cfg",
+        "threads": 12,
+        "max_visits": 500,
+        "fast_visits": 50,
+        "max_time": 8.0,
+        "wide_root_noise": 0.0,
+        "_enable_ownership": true
+    },
+    "general": {
+        "sgf_load": "~/Downloads",
+        "sgf_save": "./sgfout",
+        "anim_pv_time": 0.5,
+        "debug_level": 0,
+        "lang": "en",
+        "version": "1.5.1"
+    },
+    "timer": {
+        "byo_length": 30,
+        "byo_periods": 5,
+        "minimal_use": 0,
+        "main_time": 0,
+        "sound": true
+    },
+    "game": {
+        "size": "19",
+        "komi": 6.5,
+        "handicap": 0,
+        "rules": "japanese",
+        "clear_cache": false
+    },
+    "trainer": {
+        "theme": "theme:normal",
+        "num_undo_prompts": [
+            1,
+            1,
+            1,
+            0.5,
+            0,
+            0
+        ],
+        "eval_thresholds": [
+            12,
+            6,
+            3,
+            1.5,
+            0.5,
+            0
+        ],
+        "save_feedback": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "show_dots": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "low_visits": 25,
+        "eval_off_show_last": 3,
+        "text_point_loss": true,
+        "eval_show_ai": true,
+        "lock_ai": false
+    },
+    "ai": {
+        "ai:default": {},
+        "ai:handicap": {
+            "automatic": true,
+            "pda": 0
+        },
+        "ai:jigo": {
+            "target_score": 0.5
+        },
+        "ai:scoreloss": {
+            "strength": 0.2
+        },
+        "ai:policy": {
+            "opening_moves": 22.0
+        },
+        "ai:simple": {
+            "max_points_lost": 1.75,
+            "settled_weight": 1.0,
+            "opponent_fac": 0.5,
+            "min_visits": 3
+        },
+        "ai:p:weighted": {
+            "weaken_fac": 1.25,
+            "pick_override": 1.0,
+            "lower_bound": 0.001
+        },
+        "ai:p:pick": {
+            "pick_override": 0.95,
+            "pick_n": 5,
+            "pick_frac": 0.35
+        },
+        "ai:p:local": {
+            "pick_override": 0.95,
+            "stddev": 1.5,
+            "pick_n": 15,
+            "pick_frac": 0.0,
+            "endgame": 0.5
+        },
+        "ai:p:tenuki": {
+            "pick_override": 0.85,
+            "stddev": 7.5,
+            "pick_n": 5,
+            "pick_frac": 0.4,
+            "endgame": 0.45
+        },
+        "ai:p:influence": {
+            "pick_override": 0.95,
+            "pick_n": 5,
+            "pick_frac": 0.3,
+            "threshold": 3.5,
+            "line_weight": 10,
+            "endgame": 0.4
+        },
+        "ai:p:territory": {
+            "pick_override": 0.95,
+            "pick_n": 5,
+            "pick_frac": 0.3,
+            "threshold": 3.5,
+            "line_weight": 2,
+            "endgame": 0.4
+        },
+        "ai:p:rank": {
+            "kyu_rank": 4.0
+        }
+    },
+    "ui_state": {
+        "play": {
+            "analysis_controls": {
+                "show_children": true,
+                "eval": false,
+                "hints": false,
+                "policy": false,
+                "ownership": false
+            },
+            "panels": {
+                "graph_panel": [
+                    "open",
+                    {
+                        "score": true,
+                        "winrate": false
+                    }
+                ],
+                "stats_panel": [
+                    "open",
+                    {
+                        "score": true,
+                        "winrate": true,
+                        "points": true
+                    }
+                ],
+                "notes_panel": [
+                    "open",
+                    {
+                        "info": true,
+                        "info-details": false,
+                        "notes": false
+                    }
+                ]
+            }
+        },
+        "analyze": {
+            "analysis_controls": {
+                "show_children": true,
+                "eval": false,
+                "hints": true,
+                "policy": false,
+                "ownership": true
+            },
+            "panels": {
+                "graph_panel": [
+                    "open",
+                    {
+                        "score": true,
+                        "winrate": true
+                    }
+                ],
+                "stats_panel": [
+                    "open",
+                    {
+                        "score": true,
+                        "winrate": true,
+                        "points": true
+                    }
+                ],
+                "notes_panel": [
+                    "open",
+                    {
+                        "info": true,
+                        "info-details": true,
+                        "notes": false
+                    }
+                ]
+            }
+        }
+    }
+}

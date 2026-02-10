@@ -1,0 +1,31 @@
+subsampling:
+    CaptionSubsampler:
+        args:
+            captioner_args:
+                video_captioner: "kpyu/video-blip-flan-t5-xl-ego4d"
+                prompt: null
+
+reading:
+    dataloader_args:
+        batch_size: 32
+        resize_size: [224, 224]
+        decoder_kwargs:
+            n_frames: 8
+            uniformly_sample: True
+            fps: null
+            num_threads: 8
+            return_bytes: True
+    timeout: 60
+    sampler: null
+
+storage:
+    number_sample_per_shard: 1000
+    oom_shard_count: 5
+    captions_are_subtitles: False
+
+distribution:
+    processes_count: 1
+    thread_count: 8
+    subjob_size: 1000
+    distributor: "multiprocessing"
+

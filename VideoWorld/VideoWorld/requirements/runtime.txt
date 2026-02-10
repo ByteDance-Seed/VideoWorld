@@ -1,0 +1,12 @@
+attrs
+decord
+future
+lmdb
+numpy
+packaging
+six
+tensorboard
+timm
+tqdm
+transformers
+prettytable

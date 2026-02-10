@@ -1,0 +1,28 @@
+numpy>=1.19.5,<2
+fire>=0.4.0,<0.6.0
+requests>=2.27.1,<3
+ffmpeg-python
+yt_dlp
+pyarrow
+fsspec
+webdataset
+webvtt-py
+wandb
+pandas
+tqdm
+timeout-decorator
+scenedetect[opencv]==0.6.2
+decord
+#eva-decord  # use eva-decord instead of decord on Mac (https://github.com/dmlc/decord/issues/213)
+# torch==2.2.0
+langdetect
+torchdata==0.7.1
+torchaudio==2.1.0
+soundfile
+omegaconf
+einops
+transformers
+Pillow
+accelerate
+bitsandbytes
+scipy

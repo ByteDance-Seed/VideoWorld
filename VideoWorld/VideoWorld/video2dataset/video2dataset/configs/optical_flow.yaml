@@ -1,0 +1,28 @@
+subsampling:
+    OpticalFlowSubsampler:
+        args:
+            detector: "cv2"
+            detector_args: null
+            dtype: "fp16"
+
+reading:
+    dataloader_args:
+        resize_size: 16
+        decoder_kwargs:
+            n_frames: null
+            fps: 2
+            num_threads: 8
+            return_bytes: True
+    timeout: 60
+    sampler: null
+
+storage:
+    number_sample_per_shard: 1000
+    oom_shard_count: 5
+    captions_are_subtitles: False
+
+distribution:
+    processes_count: 16
+    thread_count: 32
+    subjob_size: 1000
+    distributor: "multiprocessing"
