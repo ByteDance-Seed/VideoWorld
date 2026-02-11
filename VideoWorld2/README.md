@@ -135,13 +135,13 @@ After training is complete, the model will automatically generate the latent cod
 # Citation
 If you find this project useful in your research, please consider citing:
 ```
-@misc{ren2025videoworldexploringknowledgelearning,
-      title={VideoWorld: Exploring Knowledge Learning from Unlabeled Videos}, 
-      author={Zhongwei Ren and Yunchao Wei and Xun Guo and Yao Zhao and Bingyi Kang and Jiashi Feng and Xiaojie Jin},
-      year={2025},
-      eprint={2501.09781},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2501.09781}, 
+@misc{ren2026videoworld2,
+  title={VideoWorld 2: Learning Transferable Knowledge from Real-world Videos}, 
+  author={Zhongwei Ren and Yunchao Wei and Xiao Yu and Guixun Luo and Yao Zhao and Bingyi Kang and Jiashi Feng and Xiaojie Jin},
+  year={2026},
+  eprint={2602.10102},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2602.10102}, 
 }
 ```
