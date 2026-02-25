@@ -4,7 +4,7 @@ This repository hosts the **VideoWorld** research project series, exploring how 
 
 This project encompasses two main iterations:
 - **[VideoWorld (CVPR 2025)](./VideoWorld)**: The first generation model using Latent Dynamics Model (LDM) for knowledge acquisition.
-- **[VideoWorld 2](./VideoWorld2)**: The second generation focusing on *transferable* knowledge using disentangled Latent Dynamics Model (dLDM).
+- **[VideoWorld 2 (CVPR 2026)](./VideoWorld2)**: The second generation focusing on *transferable* knowledge using disentangled Latent Dynamics Model (dLDM).
 
 ---
 
@@ -77,7 +77,7 @@ If you use this codebase or models in your research, please cite our papers:
 @article{ren2025videoworld2,
   title={VideoWorld 2: Learning Transferable Knowledge from Real-world Video},
   author={Ren, Zhongwei and Wei, Yunchao and Yu, Xiao and Luo, Guixun and Zhao, Yao and Feng, Jiashi and Jin, Xiaojie},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2602.10102},
   year={2025}
 }
 ```
