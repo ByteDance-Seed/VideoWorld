@@ -9,6 +9,7 @@
 <img width="1000" alt="image" src='assets/readme_figs/Fig1_final.png'>
 
 ## :fire: News
+* **[2026.02]** VideoWorld 2 has been accepted by CVPR 2026!
 * **[2026.02]** We release the code and dataset.
 
 # Highlight
